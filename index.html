@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>UEFA CHAMPIONES</title>
+</head>
+<style>
+
+  .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  body{
+    background-color: black;
+  }
+ div{
+   color: yellow;
+  
+ }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+</style>
+<body>
+
+      
+  
+  <div class="container-fluid mt-3">
+   
+  </div>
+  
+
+  <div class="container">
+    <img src="champions league 5.jpg" style="width: 100%;" >
+    <div class="bottom-left"></div>
+    <div class="top-left"><h1>CO-SPONSERED BY</h1></div>
+    <div class="top-right"><h1>HEINEKEN</h1></div>
+    <div class="bottom-right"></div>
+    <div class="centered"><H1>UEFA CHAMPIONS LEAGUE</H1></div>
+  </div>
+
+
+
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="Karim_Benzema_.jpg" class="mx-auto d-block" style="width:50%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="liverpool.jpg" class="mx-auto d-block" style="width:50%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="mbappe.jpeg" class="mx-auto d-block" style="width:50%">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="container mt-3">
+  <h2>TOP 10 CLUBS OF ALL TIME</h2>
+  <ul class="list-group">
+    <li class="list-group-item">REAL MADRID</li>
+    <li class="list-group-item">PSG</li>
+    <li class="list-group-item">LIVERPOOL</li>
+    <li class="list-group-item">MANCHESTER CITY</li>
+    <li class="list-group-item">BARCELONA</li>
+    <li class="list-group-item">MANCHESTER UNITED</li>
+    <li class="list-group-item">AC MILAN</li>
+    <li class="list-group-item">JUVENTUS</li>
+    <li class="list-group-item">BAYERN MUNICH</li>
+    <li class="list-group-item">CHELSEA</li>
+  </ul>
+</div>
+
+<!-- Header -->
+<div class="header">
+  <h1>GALLERY</h1>
+  
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="Karim_Benzema_.jpg" style="width:100%">
+    <img src="liverpool.jpg" style="width:100%">
+    <img src="mbappe.jpeg" style="width:100%">
+    <img src="neymar junior.jpg" style="width:100%">
+    <img src="halland.jpg" style="width:100%">
+    <img src="kevin de.jpg" style="width:100%">
+    <img src="Robert_Lewandowski_AP.avif" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="champions league 5.jpg" style="width:100%">
+    <img src="Lionel-Messi.webp" style="width:100%">
+    <img src="ronaldo.jpg" style="width:100%">
+    <img src="zlatan 2.jpg" style="width:100%">
+    <img src="salah.jpg" style="width:100%">
+    <img src="sadio-mane-.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="firminho.jpg" style="width:100%">
+    <img src="di maria.jpg" style="width:100%">
+    <img src="marcelo.jpeg" style="width:100%">
+    <img src="vinicius.jpg" style="width:100%">
+    <img src="chiesa_juventus.webp" style="width:100%">
+    <img src="David-Alaba-1.jpeg" style="width:100%">
+    <img src="bruno-fernandes.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="marco-verratti-.jpg" style="width:100%">
+    <img src="militao.jpg" style="width:100%">
+    <img src="reus.jpeg" style="width:100%">
+    <img src="Gabriel-Jesus-.jpg" style="width:100%">
+    <img src="van dijk.jpg" style="width:100%">
+    <img src="rodrygo.jpeg" style="width:100%">
+  </div>
+</div>
+
+
+
+<div class="container mt-3">
+ 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-light navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="https://www.uefa.com/uefachampionsleague/">HOME</a>
+      </li>
+ 
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="https://www.uefa.com/uefachampionsleague/stories/">Latest</a>
+      </li>
+      
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="https://www.uefa.com/uefachampionsleague/fixtures-results/#/rd/2001312">fixtures&results</a>
+      </li>
+   
+    </ul>
+  </div>
+</nav>
+
+
+
+
+</body>
+</html>
